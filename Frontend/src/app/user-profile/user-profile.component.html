@@ -1,0 +1,32 @@
+<!--<p>user-profile works!</p>-->
+
+<div>
+    <h2 style="color:#590086;text-align: center;"><b>Your Profile</b></h2>
+    <hr />
+    </div>
+    <div class="container" style="text-align:center;width: 35%;">
+    <div *ngIf="user" style="font-size: 150%; float: right;">
+        <div style="text-align:left;">
+            <label><b>Name     : </b></label> {{user.fname}} {{user.lname}}
+        </div>
+        <div style="text-align:left;">
+            <label><b>Email          : </b></label> {{user.email}}
+        </div>
+        <div style="text-align:left;">
+            <label><b>Phone No       : </b></label> {{user.phoneNo}}
+        </div>
+        <div style="text-align:left;">
+            <label><b>Date of Birth  : </b></label> {{user.dob | date:'dd-MM-yyyy'}}
+        </div>
+        
+        <br>
+        <button class="btn my-2 my-sm-0 m-3" style="background-color:crimson ;color: white; width: 300px;" type="submit" (click)="orders()" >My Orders</button>
+        <br>
+        <br>
+        <button class="btn my-2 my-sm-0" style="background-color: #0fb9b4 ;width: 200px;" type="submit" (click)="cart()" >Go to Cart</button>
+        <button class="btn my-2 my-sm-0 m-3" style="background-color: #0fb9b4 ;width: 200px;" type="submit" (click)="compare()" >Go to Compare</button>
+    </div>
+    </div>
+    
+    <br>
+    <br>

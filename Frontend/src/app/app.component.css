@@ -1,0 +1,52 @@
+.ft {
+    /*position: absolute;*/
+    bottom: 0;
+    width:100%;
+    height: 40px;
+    background-color: #222222;
+    text-align: center;
+}
+ 
+.jumbotron {
+    display: table-cell;
+    vertical-align: middle;
+ }
+ 
+ .info {
+    background-color:#100a15;
+    color: #FFFFFF;
+}
+ 
+ 
+ 
+.info:hover {
+    background-color:#110d14;
+    color: #FFFFFF;
+}
+ 
+.clickme {
+    background-color:#0e0812;
+    padding: 8px 20px;
+    text-decoration:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+ 
+h2{
+    border: 5px solid rgb(196, 14, 14);
+    border-radius: 50px 20px;
+    padding: 10px;
+}
+li{
+    list-style: none;
+}
+.searchbar{
+    width:50%;
+    border-radius: 10px;
+}
+.body{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(33, 152, 182), rgb(33, 152, 182), rgb(33, 152, 182));
+}
+.card{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(33, 152, 182), rgb(33, 152, 182), rgb(33, 152, 182));
+}

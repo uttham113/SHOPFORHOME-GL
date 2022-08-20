@@ -1,0 +1,32 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 style="color: #000000;">Users List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Phone No.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users | async">
+            <td>{{ user.id }}</td>
+            <td>{{ user.fname }}</td>
+            <td>{{ user.lname}}</td>
+            <td>{{ user.dob | date:'d/M/y'}}</td>
+            <td>{{ user.phoneNo}}</td>
+            
+            <td><button (click)="deleteretailer(user.id)" class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button (click)="register()" style="background-color:black;color:white" class="btn">Add User</button>
+    </div>
+  </div>
